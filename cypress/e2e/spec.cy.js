@@ -43,4 +43,14 @@ describe("Login", () => {
     cy.visit("http://localhost:3000/");
     cy.get(".header").should("be.visible");
   });
+
+  it("renders dashboard", () => {
+    cy.visit("http://localhost:3000/");
+    cy.get("#postlist").should("be.visible");
+  });
 });
+
+// describe("New Post", () => {
+//   cy.visit("http://localhost:3000/newPost");
+//   cy.findByRole("textbox", { name: /location search/i });
+// });
