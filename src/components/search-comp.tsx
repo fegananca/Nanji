@@ -109,6 +109,7 @@ export function Search({ user, setOutGoing }) {
         <SearchField
           label="Search for friends and family"
           placeholder="Search here..."
+          data-testid="searchresults"
           onSubmit={searchHandler}
         />
 
